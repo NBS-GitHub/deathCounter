@@ -1,0 +1,129 @@
+@media (max-width: 640px) {
+/*   GENERAL ###############################################*/
+   body {
+      background-image: url('../img/rocky640.png');
+   }
+/*INTRO ##################################################*/
+   .intro {
+      background-image: url('../img/flowers640.jpg');
+   }
+}
+
+@media (min-width: 641px) {
+   /*   GENERAL ###############################################*/
+
+   body {
+      background-image: url('../img/rocky1280.png');
+   }
+   /*INTRO ##################################################*/
+   .intro {
+      background-image: url('../img/flowers1280.jpg');
+   }
+}
+
+@media (min-width: 768px) {
+   /*INTRO ##################################################*/
+   .intro > * {
+      font-size: 60px;
+      padding: 15px 30px;
+   }
+}
+
+@media (min-width: 768px) and (orientation:portrait) {
+   /*INTRO ##################################################*/
+   .intro > * {
+      font-size: 80px;
+      padding: 15px 30px;
+   }
+   .introHeading {
+      width: 55%;
+   }
+}
+
+@media (min-width: 1024px) {
+   /*INTRO ##################################################*/
+   .intro > * {
+      font-size: 80px;
+      padding: 20px 40px;
+   }
+   .intro button {
+      cursor: pointer;
+      transition: .3s;
+   }
+   .intro button:hover {
+      background-color: rgba(0,0,0,.8);
+      color: #bbb;
+   }
+/*   MAIN VIEW #############################################*/
+.heading {
+   font-size: 30px;
+}
+.count {
+   font-size: 40px;
+}
+.info {
+   font-size: 20px;
+}
+}
+
+@media (min-width: 1280px) {
+   .heading {
+   font-size: 40px;
+}
+.count {
+   font-size: 56px;
+}
+.info {
+   font-size: 22px;
+}
+}
+
+@media (min-width: 1281px) {
+   /*   GENERAL ###############################################*/
+   body {
+      background-image: url('../img/rocky1920.png');
+   }
+   /*INTRO ##################################################*/
+   .intro {
+      background-image: url('../img/flowers1920.jpg');
+   }
+}
+
+@media (min-height: 730px) and (orientation: portrait) {
+   /*   MAIN VIEW #############################################*/
+.heading {
+   font-size: 28px;
+}
+.count {
+   font-size: 35px;
+}
+.info {
+   font-size: 17px;
+}
+.info2,
+.info5 {
+   top: 14%;
+}
+.info3,
+.info6 {
+   top: 86%;
+}
+.info4 {
+   top: 50%;
+}
+}
+
+@media (min-height: 1024px) and (orientation: portrait) {
+   /*   MAIN VIEW #############################################*/
+.heading {
+   font-size: 40px;
+}
+.count {
+   font-size: 55px;
+   min-width: 9vh;
+   min-height: 9vh;
+}
+.info {
+   font-size: 27px;
+}
+   

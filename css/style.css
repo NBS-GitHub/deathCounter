@@ -1,0 +1,145 @@
+/*GENERAL ###########################################*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root {
+   --animationDelay: 569.92104ms;
+}
+.semiTransparent {
+   opacity: .85;
+}
+.gone {
+  opacity: 0;
+}
+body {
+   height: 100vh;
+   font-family: 'Julius Sans One', sans-serif;
+   color: #eee;
+   font-size: 20px;
+}
+
+/*INTRO ##################################################*/
+.intro {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   background-position: center;
+   background-size: cover;
+   transition: opacity 2.5s;
+}
+.intro > * {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   letter-spacing: 3px;
+   padding: 10px 20px;
+   background-color: rgba(0,0,0,.7);
+   border-radius: 2vh;
+   border: 1.5px solid black;
+   font-family: 'Dancing Script', cursive;
+   font-size: 36px;
+   text-align: center;
+   z-index: 1;
+}
+.introHeading,
+.intro button {
+   background-image: linear-gradient(gray, transparent 5%, transparent 95%, black 100%);
+}
+.introHeading {
+   top: 33vh;
+   cursor: default;
+   background-image: linear-gradient(gray, transparent 5%, transparent 95%, black 100%);
+}
+.intro button {
+   top: 67vh;
+   border: none;
+   color: #eee;
+   border: 1.5px solid black;
+   animation: pulse .57s infinite;
+}
+.introLayer {
+   top: 50%;
+   width: 60vw;
+   height: 70vh;
+   z-index: 0;
+   background-color: transparent;
+   border: none;
+   transition: .2s;
+}
+
+/*MAIN VIEW ##############################################*/
+.layer {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(90deg, rgba(0,0,0,.9), transparent, rgba(0,0,0,.7));
+   overflow: hidden;
+}
+.layer > * {
+   position: absolute;
+}
+.heading,
+.count,
+.info {
+   left: 50%;
+   transform: translate(-50%, -50%);
+   letter-spacing: 3px;
+   padding: 10px;
+   background-color: rgba(0,0,0,.7);
+   box-shadow: 0 0 40px 10px #000;
+   border-radius: 45%;
+}
+.heading {
+   top: 33vh;
+   font-size: 20px;
+   text-align: center;
+}
+.count {
+   top: 67vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   min-width: 12vh;
+   min-height: 12vh;
+}
+.info {
+   opacity: 0;
+   font-size: 12px;
+   animation: infoMotion 3.41958s infinite;
+   z-index: -1;
+}
+.info1 {
+   top: 50%;
+}
+.info2 {
+   top: 16%;
+   animation-delay: var(--animationDelay);
+}
+.info3 {
+   top: 84%;
+   animation-delay: calc(var(--animationDelay) * 2);
+}
+.info4 {
+   top: 50%;
+   animation-delay: calc(var(--animationDelay) * 3);
+}
+.info5 {
+   top: 16%;
+   animation-delay: calc(var(--animationDelay) * 4);
+}
+.info6 {
+   top: 84%;
+   animation-delay: calc(var(--animationDelay) * 5);
+}
+.info p {
+   line-height: 1.5;
+   text-align: center;
+}
