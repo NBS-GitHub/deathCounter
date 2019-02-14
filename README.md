@@ -1,4 +1,5 @@
 # deathCounter
+### Every second three people die somewhere in the world. Now you can face this fact.
 ---
 The JS application counting the deaths on Earth.
 
